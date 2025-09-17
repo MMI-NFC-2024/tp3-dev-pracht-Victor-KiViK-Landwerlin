@@ -1,0 +1,15 @@
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a href="/" class="btn btn-ghost text-xl">TP 2</a>
+  </div>
+  <div class="flex gap-4">
+    <select class="select select-primary border-4" onchange="window.location.href = '/species/' + this.value">
+      <option disabled selected>Choisir une espece</option>
+      <option value="Adelie">Adelie</option>
+      <option value="Gentoo">Gentoo</option>
+      <option value="Chinstrap">Chinstrap</option>
+    </select>
+    <a href="/test-iframe"><button class="btn btn-primary">Iframe</button></a>
+    <a href="/ancre"><button class="btn btn-primary ml-2">Ancre</button></a>
+  </div>
+</div>

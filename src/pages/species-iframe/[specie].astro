@@ -1,0 +1,14 @@
+---
+import GraphicSpecie from '../../components/GraphicSpecie.astro';
+export async function getStaticPaths() {
+    
+    const species = ['Adelie', 'Gentoo', 'Chinstrap'];
+
+    return species.map((specie) => ({
+        params: { specie },
+    }));
+}
+const { specie } = Astro.params;
+---
+
+<GraphicSpecie specie={specie} />

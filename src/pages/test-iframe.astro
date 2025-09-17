@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <h1 class="text-2xl">Accueil TP2</h1>
+    
+    <nav class="mb-4">
+        <ul class="flex space-x-4">
+            <li><a href="/species-iframe/Adelie" target="species-frame">Adelie</a></li>
+            <li><a href="/species-iframe/Chinstrap" target="species-frame">Chinstrap</a></li>
+            <li><a href="/species-iframe/Gentoo" target="species-frame">Gentoo</a></li>
+        </ul>
+    </nav>
+
+    <iframe
+        name="species-frame" 
+        src="/species-iframe/Adelie"
+        width="40%"
+        height="400px"
+    ></iframe>
+
+</Layout>
