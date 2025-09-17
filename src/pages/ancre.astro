@@ -30,8 +30,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </div>
     <div class="flex justify-center w-full py-2 gap-2">
-        <a href="#slide1" class="btn btn-xs">Adelie</a>
-        <a href="#slide2" class="btn btn-xs">Chinstrap</a>
-        <a href="#slide3" class="btn btn-xs">Gentoo</a>
+        <select id="specieSelect" class="select select-bordered" onchange="document.location.href = this.value">
+            <option value="#slide1">Adelie</option>
+            <option value="#slide2">Chinstrap</option>
+            <option value="#slide3">Gentoo</option>
+        </select>
     </div>
+
 </Layout>
