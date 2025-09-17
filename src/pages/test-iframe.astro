@@ -5,15 +5,20 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <h1 class="text-2xl">Accueil TP3</h1>
     
-    <div class="mb-4">
-        <select 
-            onchange="document.querySelector('iframe[name=species-frame]').src = '/species-iframe/' + this.value"
-            class="p-2 border rounded"
-        >
-            <option value="Adelie">Adelie</option>
-            <option value="Chinstrap">Chinstrap</option>
-            <option value="Gentoo">Gentoo</option>
-        </select>
+    <div class="mb-6">
+        <label class="form-control w-full max-w-xs">
+            <div class="label">
+                <span class="label-text">Sélectionnez une espèce</span>
+            </div>
+            <select 
+                onchange="document.querySelector('iframe[name=species-frame]').src = '/species-iframe/' + this.value"
+                class="select select-bordered w-full max-w-xs"
+            >
+                <option value="Adelie">Adelie</option>
+                <option value="Chinstrap">Chinstrap</option>
+                <option value="Gentoo">Gentoo</option>
+            </select>
+        </label>
     </div>
 
     <iframe
