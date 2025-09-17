@@ -5,13 +5,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <h1 class="text-2xl">Accueil TP3</h1>
     
-    <nav class="mb-4">
-        <ul class="flex space-x-4">
-            <li><a href="/species-iframe/Adelie" target="species-frame">Adelie</a></li>
-            <li><a href="/species-iframe/Chinstrap" target="species-frame">Chinstrap</a></li>
-            <li><a href="/species-iframe/Gentoo" target="species-frame">Gentoo</a></li>
-        </ul>
-    </nav>
+    <div class="mb-4">
+        <select 
+            onchange="document.querySelector('iframe[name=species-frame]').src = '/species-iframe/' + this.value"
+            class="p-2 border rounded"
+        >
+            <option value="Adelie">Adelie</option>
+            <option value="Chinstrap">Chinstrap</option>
+            <option value="Gentoo">Gentoo</option>
+        </select>
+    </div>
 
     <iframe
         name="species-frame" 

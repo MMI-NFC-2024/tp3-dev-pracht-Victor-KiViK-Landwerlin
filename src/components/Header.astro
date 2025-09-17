@@ -9,7 +9,11 @@
       <option value="Gentoo">Gentoo</option>
       <option value="Chinstrap">Chinstrap</option>
     </select>
-    <a href="/test-iframe"><button class="btn btn-primary">Iframe</button></a>
-    <a href="/ancre"><button class="btn btn-primary ml-2">Ancre</button></a>
+    <select class="select select-primary border-4" onchange="window.location.href = '/' + this.value">
+      <option disabled selected>Choisir une page</option>
+      <option value="ancre">ancre</option>
+      <option value="test-iframe">test-iframe</option>
+
+    </select>
   </div>
 </div>
