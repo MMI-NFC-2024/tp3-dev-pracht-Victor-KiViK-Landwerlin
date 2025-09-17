@@ -1,0 +1,24 @@
+---
+import { Tabs, TabsList, TabsTab, TabsPanel } from 'accessible-astro-components'
+---
+
+<Tabs>
+  <TabsList>
+    <TabsTab id="tab1" controls="panel1" selected>First tab</TabsTab>
+    <TabsTab id="tab2" controls="panel2">Second tab</TabsTab>
+    <TabsTab id="tab3" controls="panel3">Third tab</TabsTab>
+  </TabsList>
+
+  <TabsPanel id="panel1" labelledby="tab1" selected>
+    <h2>First panel</h2>
+    <p>Content for first panel</p>
+  </TabsPanel>
+  <TabsPanel id="panel2" labelledby="tab2">
+    <h2>Second panel</h2>
+    <p>Content for second panel</p>
+  </TabsPanel>
+  <TabsPanel id="panel3" labelledby="tab3">
+    <h2>Third panel</h2>
+    <p>Content for third panel</p>
+  </TabsPanel>
+</Tabs>
